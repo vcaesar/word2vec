@@ -46,6 +46,7 @@ func (c *cache) Cos(x, y Expr) (float32, error) {
 	if err, ok := c.errCache[xh]; ok {
 		return 0, err
 	}
+
 	yh := hashExpr(y)
 	if err, ok := c.errCache[yh]; ok {
 		return 0, err
@@ -66,8 +67,10 @@ func (c *cache) Cos(x, y Expr) (float32, error) {
 				c.errCache[yh] = err
 			}
 		}
+
 		return 0, err
 	}
+
 	c.cache[xh+yh] = f
 	return f, nil
 }
@@ -90,8 +93,10 @@ func (c *cache) CosN(e Expr, n int) ([]Match, error) {
 				c.errCache[eh] = err
 			}
 		}
+
 		return nil, err
 	}
+
 	c.cosnCache[eh] = result
 	return result, nil
 }

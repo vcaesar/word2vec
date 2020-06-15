@@ -72,8 +72,8 @@ func TestVectorDot(t *testing.T) {
 
 func TestFromReader(t *testing.T) {
 	vecs := map[string]Vector{
-		"hello": Vector{0, 1},
-		"world": Vector{1, 0},
+		"hello": {0, 1},
+		"world": {1, 0},
 	}
 	dim := 2
 

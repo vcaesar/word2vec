@@ -2,13 +2,14 @@ package word2vec
 
 import (
 	"bytes"
-	"encoding/json"
 	"errors"
 	"fmt"
-	"io/ioutil"
 	"log"
-	"net/http"
 	"strings"
+
+	"encoding/json"
+	"io/ioutil"
+	"net/http"
 )
 
 type cosQuery struct {
@@ -142,6 +143,7 @@ func (s *server) handleCosQuery(w http.ResponseWriter, r *http.Request) {
 		handleError(w, r, http.StatusInternalServerError, msg)
 		return
 	}
+
 	s.handleEval(q, w, r)
 }
 
@@ -156,6 +158,7 @@ func (s *server) handleCosesQuery(w http.ResponseWriter, r *http.Request) {
 		handleError(w, r, http.StatusInternalServerError, msg)
 		return
 	}
+
 	s.handleEval(q, w, r)
 }
 

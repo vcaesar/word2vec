@@ -34,6 +34,7 @@ func FromReader(r io.Reader) (*Model, error) {
 	if err != nil {
 		return nil, err
 	}
+
 	if n != 2 {
 		return nil, fmt.Errorf("could not extract size/dim from binary model data")
 	}
@@ -68,12 +69,14 @@ func FromReader(r io.Reader) (*Model, error) {
 			}
 			return nil, err
 		}
+
 		if b != byte('\n') {
 			if err := br.UnreadByte(); err != nil {
 				return nil, err
 			}
 		}
 	}
+
 	return m, nil
 }
 
@@ -185,6 +188,7 @@ func (m *Model) Map(words []string) map[string]Vector {
 			result[w] = v
 		}
 	}
+
 	return result
 }
 
@@ -211,8 +215,10 @@ func (m *Model) Coses(pairs [][2]Expr) ([]float32, error) {
 		if err != nil {
 			return nil, err
 		}
+
 		out[i] = c
 	}
+
 	return out, nil
 }
 
@@ -227,6 +233,7 @@ func (m *Model) Eval(expr Expr) (Vector, error) {
 		}
 		v.Add(c, u)
 	}
+
 	v.Normalise()
 	return v, nil
 }
@@ -264,6 +271,7 @@ func (m *Model) cosineN(v Vector, n int) []Match {
 		if r[n-1].Score > p.Score {
 			continue
 		}
+
 		r[n-1] = p
 		for j := n - 2; j >= 0; j-- {
 			if r[j].Score > p.Score {
@@ -272,6 +280,7 @@ func (m *Model) cosineN(v Vector, n int) []Match {
 			r[j], r[j+1] = p, r[j]
 		}
 	}
+
 	return r
 }
 
@@ -332,5 +341,6 @@ func MultiCosN(m *Model, exprs []Expr, n int) ([][]Match, error) {
 	for r := range ch {
 		result[r.N] = r.Matches
 	}
+
 	return result, nil
 }

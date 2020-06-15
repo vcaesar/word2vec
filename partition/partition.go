@@ -8,7 +8,6 @@ import (
 	"strings"
 )
 
-
 // NotFoundError is an error returned from Partition functions when an input
 // word can not be found.
 type NotFoundError struct {
