@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"code.sajari.com/word2vec"
+	"github.com/vcaesar/word2vec"
 )
 
 var addr string
