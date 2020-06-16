@@ -14,11 +14,13 @@ import (
 	"github.com/vcaesar/word2vec"
 )
 
-var addr string
-var addListA, subListA string
-var addListB, subListB string
-var sim bool
-var n int
+var (
+	addr               string
+	addListA, subListA string
+	addListB, subListB string
+	sim                bool
+	n                  int
+)
 
 func init() {
 	flag.StringVar(&addr, "addr", "localhost:1234", "server `address`")

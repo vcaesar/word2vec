@@ -168,7 +168,7 @@ func (m *Model) Size() int {
 	return len(m.words)
 }
 
-// Dim returns the dimention of the vectors in the model.
+// Dim returns the dimension of the vectors in the model.
 func (m *Model) Dim() int {
 	return m.dim
 }

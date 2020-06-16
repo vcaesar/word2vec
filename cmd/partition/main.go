@@ -14,11 +14,13 @@ import (
 	"github.com/vcaesar/word2vec/partition"
 )
 
-var path string
-var query string
-var class int
-var dist bool
-var info bool
+var (
+	path  string
+	query string
+	class int
+	dist  bool
+	info  bool
+)
 
 func init() {
 	flag.StringVar(&path, "p", "", "`path` to classes text data")

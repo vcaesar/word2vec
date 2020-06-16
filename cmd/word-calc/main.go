@@ -17,11 +17,13 @@ import (
 	"github.com/vcaesar/word2vec"
 )
 
-var path string
-var addList, subList string
-var multiQuery string
-var verbose bool
-var n int
+var (
+	path             string
+	addList, subList string
+	multiQuery       string
+	verbose          bool
+	n                int
+)
 
 func init() {
 	flag.StringVar(&path, "model", "", "`path` to binary model data")

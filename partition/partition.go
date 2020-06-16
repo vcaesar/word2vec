@@ -106,6 +106,7 @@ func (p *Partition) EquivClass(w string) ([]string, error) {
 	return p.classes[i], nil
 }
 
+// EquivClassIndex returns the equivalence class index
 func (p *Partition) EquivClassIndex(i int) ([]string, error) {
 	c, ok := p.classes[i]
 	if !ok {
