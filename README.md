@@ -1,4 +1,8 @@
 # word2vec
+[![Build Status](https://github.com/vcaesar/word2vec/workflows/Go/badge.svg)](https://github.com/vcaesar/word2vec/commits/master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/vcaesar/word2vec)](https://goreportcard.com/report/github.com/vcaesar/word2vec)
+[![GoDoc](https://godoc.org/github.com/vcaesar/word2vec?status.svg)](https://godoc.org/github.com/vcaesar/word2vec)
+[![GitHub release](https://img.shields.io/github/release/vcaesar/word2vec.svg)](https://github.com/vcaesar/word2vec/releases/latest)
 [![Build Status](https://travis-ci.org/sajari/word2vec.svg?branch=master)](https://travis-ci.org/sajari/word2vec)
 [![GoDoc](https://godoc.org/github.com/vcaesar/word2vec?status.svg)](https://godoc.org/github.com/vcaesar/word2vec)
 
