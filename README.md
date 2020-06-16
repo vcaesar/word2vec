@@ -10,8 +10,8 @@ word2vec is a Go package which provides functions for querying word2vec models (
 - A [word2vec](https://code.google.com/p/word2vec) model (binary format)
 
 ## Installation
-
-If you haven't setup Go before, you need to first set a `GOPATH` (see [https://golang.org/doc/code.html#GOPATH](https://golang.org/doc/code.html#GOPATH)).
+<!--
+If you haven't setup Go before, you need to first set a `GOPATH` (see [https://golang.org/doc/code.html#GOPATH](https://golang.org/doc/code.html#GOPATH)). -->
 
 To fetch and build the code:
 
@@ -49,7 +49,7 @@ expr.Add(1, "woman")
 // Find the most similar result by cosine similarity.
 matches, err := c.CosN(expr, 1)
 if err != nil {
-	log.Fatalf("error evaluating cosine similarity: %v", err)
+	log.Printf("error evaluating cosine similarity: %v", err)
 }
 ```
 
@@ -72,6 +72,6 @@ expr.Add(1, "woman")
 // Find the most similar result by cosine similarity.
 matches, err := model.CosN(expr, 1)
 if err != nil {
-	log.Fatalf("error evaluating cosine similarity: %v", err)
+	log.Printf("error evaluating cosine similarity: %v", err)
 }
 ```
