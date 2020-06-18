@@ -24,6 +24,9 @@ type Model struct {
 var (
 	_ Coser  = (*Model)(nil)
 	_ Mapper = (*Model)(nil)
+
+	// UseNorm use the Normalise pattern
+	UseNorm bool
 )
 
 // FromReader creates a Model using the binary model data provided by the io.Reader.
@@ -58,7 +61,9 @@ func FromReader(r io.Reader) (*Model, error) {
 			return nil, err
 		}
 
-		v.Normalise()
+		if UseNorm {
+			v.Normalise()
+		}
 
 		m.words[w] = v
 
@@ -234,7 +239,10 @@ func (m *Model) Eval(expr Expr) (Vector, error) {
 		v.Add(c, u)
 	}
 
-	v.Normalise()
+	// fmt.Println("Eval...")
+	if UseNorm {
+		v.Normalise()
+	}
 	return v, nil
 }
 
@@ -257,7 +265,9 @@ func (m *Model) CosN(e Expr, n int) ([]Match, error) {
 		return nil, err
 	}
 
-	v.Normalise()
+	if UseNorm {
+		v.Normalise()
+	}
 	return m.cosineN(v, n), nil
 }
 
