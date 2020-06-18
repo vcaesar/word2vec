@@ -14,6 +14,11 @@ import (
 	"github.com/ziutek/blas"
 )
 
+const (
+	// Version get the gse version
+	Version = "v1.0.3.106, Nisqually Glacier!"
+)
+
 // Model is a type which represents a word2vec Model and implements the Coser
 // and Mapper interfaces.
 type Model struct {
@@ -239,7 +244,6 @@ func (m *Model) Eval(expr Expr) (Vector, error) {
 		v.Add(c, u)
 	}
 
-	// fmt.Println("Eval...")
 	if UseNorm {
 		v.Normalise()
 	}
