@@ -11,6 +11,7 @@ import (
 	"io"
 	"sync"
 
+	"github.com/go-vgo/gt/file"
 	"github.com/ziutek/blas"
 )
 
@@ -33,6 +34,21 @@ var (
 	// UseNorm use the Normalise pattern
 	UseNorm bool
 )
+
+// Open open word2vec file return model
+func Open(filePath string) (*Model, error) {
+	r, err := file.ReadIo(filePath)
+	if err != nil {
+		return nil, err
+	}
+
+	model, err := FromReader(r)
+	if err != nil {
+		return nil, err
+	}
+
+	return model, nil
+}
 
 // FromReader creates a Model using the binary model data provided by the io.Reader.
 func FromReader(r io.Reader) (*Model, error) {
