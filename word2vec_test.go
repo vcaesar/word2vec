@@ -112,6 +112,7 @@ func TestFromReader(t *testing.T) {
 		{Word: "hello", Score: 1.0},
 		{Word: "world", Score: 0.0},
 	}
+
 	matches, err := m.CosN(x, 2)
 	if err != nil {
 		t.Errorf("unexpected error from m.CosN(x, 2): %v", err)

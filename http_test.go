@@ -67,12 +67,14 @@ func TestEndToEndCos(t *testing.T) {
 		if !reflect.DeepEqual(cosX, tt.x) {
 			t.Errorf("cosX = %#v, expected: %#v", cosX, tt.x)
 		}
+
 		if !reflect.DeepEqual(cosY, tt.y) {
 			t.Errorf("cosY = %#v, expected: %#v", cosY, tt.y)
 		}
 		if f != tt.f {
 			t.Errorf("f = %#v, expected: %#v", f, tt.f)
 		}
+
 		if tt.err != nil {
 			if err == nil {
 				t.Errorf("err = %#v, expected: %#v", err, tt.err)
@@ -129,6 +131,7 @@ func TestEndToEndCoses(t *testing.T) {
 		if !reflect.DeepEqual(f, tt.f) {
 			t.Errorf("f = %#v, expected: %#v", f, tt.f)
 		}
+
 		if tt.err != nil {
 			if err == nil {
 				t.Errorf("err = %#v, expected: %#v", err, tt.err)
@@ -202,6 +205,7 @@ func TestEndToEndCosN(t *testing.T) {
 		if !reflect.DeepEqual(m, tt.m) {
 			t.Errorf("m = %#v, expected: %#v", m, tt.m)
 		}
+
 		if tt.err != nil {
 			if err == nil {
 				t.Errorf("err = %#v, expected: %#v", err, tt.err)

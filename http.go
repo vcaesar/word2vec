@@ -50,6 +50,7 @@ func (qs cosesQuery) Eval(c Coser) (interface{}, error) {
 	if err != nil {
 		return nil, err
 	}
+
 	return struct {
 		Values []float32
 	}{
@@ -188,7 +189,8 @@ func (c Client) fetch(x interface{}, suffix string) ([]byte, error) {
 		return nil, err
 	}
 
-	r, err := http.NewRequest("GET", fmt.Sprintf("http://%s/%s", c.Addr, suffix), bytes.NewReader(b))
+	r, err := http.NewRequest("GET",
+		fmt.Sprintf("http://%s/%s", c.Addr, suffix), bytes.NewReader(b))
 	if err != nil {
 		return nil, err
 	}
