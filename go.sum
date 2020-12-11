@@ -1,6 +1,6 @@
-github.com/go-vgo/gt/file v0.0.0-20200620042549-c032bb8ec33b h1:D2HVxpADYTrJpjeAVU88YXhrOb3+Wlz8pehzZ62zWYE=
-github.com/go-vgo/gt/file v0.0.0-20200620042549-c032bb8ec33b/go.mod h1:WQr4jbi/mrWQQrjwSmxWHf5WNaPKY8hlzuBuJAOj4OY=
-github.com/vcaesar/tt v0.10.0 h1:jPtFiRRnCOXVakd5ujCed2dwWwTs91wh8W1iHeUIfc0=
-github.com/vcaesar/tt v0.10.0/go.mod h1:GHPxQYhn+7OgKakRusH7KJ0M5MhywoeLb8Fcffs/Gtg=
+github.com/go-vgo/gt v0.23.0 h1:YSk/LlCuJwucfPl6VtXe4mITf/EaYURmQPYNhY+VKDY=
+github.com/go-vgo/gt v0.23.0/go.mod h1:Z5Z5AhIcwgUVcvpC9uWXrfQWvdtPnd5EAVfJyditfl8=
+github.com/vcaesar/tt v0.11.0 h1:obQecjgbnAxxC6OYGY6yDvhGRW2PR5wD8Ma2uJH3WGA=
+github.com/vcaesar/tt v0.11.0/go.mod h1:GHPxQYhn+7OgKakRusH7KJ0M5MhywoeLb8Fcffs/Gtg=
 github.com/ziutek/blas v0.0.0-20190227122918-da4ca23e90bb h1:uWiILQloLUVdtPYr1ZZo2zqtlpzo4G8vUpglo/Fs2H8=
 github.com/ziutek/blas v0.0.0-20190227122918-da4ca23e90bb/go.mod h1:J3xKssoVdrwZ2E29fIox/EKxOZWimS7AZ4fOTCFkOLo=
