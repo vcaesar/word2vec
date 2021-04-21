@@ -1,5 +1,5 @@
-github.com/go-vgo/gt v0.23.0 h1:YSk/LlCuJwucfPl6VtXe4mITf/EaYURmQPYNhY+VKDY=
-github.com/go-vgo/gt v0.23.0/go.mod h1:Z5Z5AhIcwgUVcvpC9uWXrfQWvdtPnd5EAVfJyditfl8=
+github.com/go-vgo/gt v0.24.1 h1:aaRDnXGq0o/kH4OmJlCIpH/IvNlCTByZ/9ETNIZZiUM=
+github.com/go-vgo/gt v0.24.1/go.mod h1:Z5Z5AhIcwgUVcvpC9uWXrfQWvdtPnd5EAVfJyditfl8=
 github.com/vcaesar/tt v0.11.0 h1:obQecjgbnAxxC6OYGY6yDvhGRW2PR5wD8Ma2uJH3WGA=
 github.com/vcaesar/tt v0.11.0/go.mod h1:GHPxQYhn+7OgKakRusH7KJ0M5MhywoeLb8Fcffs/Gtg=
 github.com/ziutek/blas v0.0.0-20190227122918-da4ca23e90bb h1:uWiILQloLUVdtPYr1ZZo2zqtlpzo4G8vUpglo/Fs2H8=

@@ -7,7 +7,8 @@ go:
   # - 1.7
   # - 1.8
   # - 1.9
-  - 1.15.x
+  # - 1.15.x
+  - 1.16.x
   - tip
 
 go_import_path: github.com/vcaesar/word2vec
